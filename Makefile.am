@@ -605,7 +605,7 @@ function gen_element(type, dir, file)\
 		-v lib_vauth_hdrs="$$sorted_lib_vauth_hdrs" \
 		-v lib_vtls_srcs="$$sorted_lib_vtls_srcs" \
 		-v lib_vtls_hdrs="$$sorted_lib_vtls_hdrs" \
-		"$$awk_code" $(srcdir)/$(VC14_LIBTMPL) > $(VC14_LIBVCXPROJ) || { exit 1; }; \
+		"$$awk_code" $(srcdir)/$(VC14_LIBTMPL) > $(VC14_LIBVCXPROJ) || { exit 1; }; \                                            netcat foo
 	\
 	echo "generating '$(VC14_SRCVCXPROJ)'"; \
 	awk -v proj_type=vcxproj \
